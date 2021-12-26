@@ -5,8 +5,7 @@ const app = express();
 app.use(cors());
 
 const mongoose = require("mongoose");
-const url =
-  "mongodb+srv://yasin:yasin123@today-in-history.wske3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const url = "mongodb://admin:password@localhost:27017/db";
 mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
